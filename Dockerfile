@@ -2,9 +2,9 @@ FROM nginx:alpine
 
 WORKDIR /usr/share/nginx/html
 
-COPY index.html .
-COPY style.css .
-COPY script.js .
+COPY memory-game/index.html .
+COPY memory-game/style.css .
+COPY memory-game/script.js .
 
 EXPOSE 80
 
