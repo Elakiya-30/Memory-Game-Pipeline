@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Memory Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="game-header">
+            <h1>Memory Puzzle</h1>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <span class="stat-label">Moves</span>
+                    <span class="stat-value" id="moves">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Time</span>
+                    <span class="stat-value" id="time">00:00</span>
+                </div>
+            </div>
+            <button id="restart-btn" class="primary-btn">Restart Game</button>
+        </header>
+
+        <main class="game-board-container">
+            <div class="grid" id="grid">
+                <!-- Cards will be generated here by JS -->
+            </div>
+        </main>
+
+        <div class="win-modal overlay" id="win-modal">
+            <div class="modal-content">
+                <h2>Congratulations! 🎉</h2>
+                <p>You completed the puzzle in <span id="final-time"></span> with <span id="final-moves"></span> moves.</p>
+                <button id="play-again-btn" class="primary-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
