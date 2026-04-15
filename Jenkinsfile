@@ -9,16 +9,11 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Show Files') {
             steps {
                 sh 'pwd'
                 sh 'ls -la'
+                sh 'ls -la memory-game'
             }
         }
 
